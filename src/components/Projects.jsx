@@ -37,7 +37,7 @@ const projects = [
   },
   {
     id: 'laravel-vue-app',
-    categories: ['Laravel'],
+    categories: ['Laravel', 'Vue'],
     title: 'Laravel Vue App',
     description: 'As a frontend developer, I have built a Laravel Vue site with responsive design using Alpine.js and Tailwind CSS.',
     packages: ['Laravel', 'Vue', 'Tailwind CSS', 'Alpine.js', 'Swiper JS', 'Inertia'],
@@ -82,6 +82,36 @@ const projects = [
     packages: ['Laravel', 'PHP', 'Alpine.js', 'Tailwind CSS', 'MySQL'],
     images: ['/assets/images/medical_biller_1.png'],
     link: 'https://medicalbiller.co/',
+  },
+  // --- Added by Cascade ---
+  {
+    id: 'balady',
+    title: 'Balady',
+    description: 'Balady is an advanced training platform where users can register, enroll in courses, access lessons, pass exams, and get certified. It provides a seamless e-learning experience with progress tracking and certification.',
+    categories: ['Angular' , 'Laravel'],
+    packages: ['Frontend: Angular', 'Bootstrap', "REST API's", 'Backend: Laravel', 'MySQL'],
+    images: [
+      '/assets/images/balady_1.png',
+      '/assets/images/balady_2.png',
+      '/assets/images/balady_3.png',
+      '/assets/images/balady_4.png',
+      '/assets/images/balady_5.png',
+    ],
+  },
+  {
+    id: 'balady-dashboard',
+    title: 'Balady Dashboard',
+    description: 'Balady Dashboard is the admin panel for the Balady training platform. Admins can manage exams, answer questions, handle users, courses, lessons, and view analytics for platform performance and user progress.',
+    categories: ['Laravel', 'Bootstrap', 'MySQL'],
+    packages: ['Laravel', 'Bootstrap', 'MySQL'],
+    images: [
+      '/assets/images/baladyapp_1.png',
+      '/assets/images/baladyapp_2.png',
+      '/assets/images/baladyapp_3.png',
+      '/assets/images/baladyapp_4.png',
+      '/assets/images/baladyapp_5.png',
+      '/assets/images/baladyapp_6.png',
+    ],
   }
 ];
 
@@ -91,6 +121,8 @@ const FILTERS = [
   'All',
   'MERN Stack',
   'Laravel',
+  'Vue',
+  'Angular',
   'Shopify',
   'WordPress',
 ];

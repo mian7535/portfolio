@@ -236,6 +236,69 @@ Built with Laravel (backend), Alpine.js (interactivity), Tailwind CSS (UI), and 
     
     link: 'https://medicalbiller.co/'
   },
+  // --- Added by Cascade ---
+  {
+    id: 'balady',
+    title: 'Balady',
+    description: 'Balady is an advanced training platform where users can register, enroll in courses, access lessons, pass exams, and get certified. It provides a seamless e-learning experience with progress tracking and certification.',
+    details: `Balady is a modern training and certification platform. Users can:
+- Register and create their profiles
+- Browse and enroll in a variety of courses
+- Access structured lessons and learning materials
+- Take interactive exams and quizzes
+- Track their learning progress
+- Earn certificates upon successful completion
+
+The platform offers a user-friendly interface, secure authentication, and responsive design for both web and mobile devices, making learning accessible and engaging for everyone.`,
+    features: [
+      'User registration and profiles',
+      'Course and lesson management',
+      'Interactive exams and quizzes',
+      'Progress tracking',
+      'Certification system',
+      'Modern, responsive UI',
+    ],
+    packages: ['Frontend: Angular', 'Bootstrap', "REST API's", 'Backend: Laravel', 'MySQL'],
+    images: [
+      '/assets/images/balady_1.png',
+      '/assets/images/balady_2.png',
+      '/assets/images/balady_3.png',
+      '/assets/images/balady_4.png',
+      '/assets/images/balady_5.png',
+    ],
+  },
+  {
+    id: 'balady-dashboard',
+    title: 'Balady Dashboard',
+    description: 'Balady Dashboard is the admin panel for the Balady training platform. Admins can manage exams, answer questions, handle users, courses, lessons, and view analytics for platform performance and user progress.',
+    details: `Balady Dashboard is the administrative control center for the Balady training platform. Admins can:
+- Create and manage courses and lessons
+- Add, edit, and evaluate exams and questions
+- Manage users, enrollments, and certifications
+- Monitor user progress and course completion
+- View analytics and reports on platform activity
+- Handle all platform content and structure
+
+The dashboard provides a secure, role-based interface with powerful tools for maintaining educational quality and operational efficiency.`,
+    features: [
+      'Admin panel for full platform management',
+      'Course, lesson, and exam management',
+      'Question and answer handling',
+      'User and certification management',
+      'Analytics and reporting',
+      'Role-based access and security',
+      'Responsive, intuitive UI',
+    ],
+    packages: ['Laravel', 'Bootstrap', 'MySQL'],
+    images: [
+      '/assets/images/baladyapp_1.png',
+      '/assets/images/baladyapp_2.png',
+      '/assets/images/baladyapp_3.png',
+      '/assets/images/baladyapp_4.png',
+      '/assets/images/baladyapp_5.png',
+      '/assets/images/baladyapp_6.png',
+    ],
+  },
 ];
 
 export default function ProjectDetail() {
