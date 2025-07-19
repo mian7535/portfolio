@@ -156,6 +156,57 @@ This solution allows for flexible store management and a smooth customer journey
     
   },
   {
+    id: 'repair-greek',
+    title: 'Repair Greek',
+    description: 'Repait Greek is a modern web application built with React, Tailwind CSS, and Tailwind Motion. The project features a fully responsive design, smooth motion effects, and a clean, user-friendly interface, making it ideal for both desktop and mobile users.',
+    details: `Repait Greek is a showcase of modern frontend engineering. Built with React for robust component architecture, styled with Tailwind CSS for rapid and consistent UI, and animated using Tailwind Motion for delightful transitions and interactivity. The design is fully responsive, ensuring a seamless experience on both desktop and mobile devices. This project demonstrates best practices in UI/UX, accessibility, and performance, making it a model for contemporary web apps.`,
+    features: [
+      'Built with React',
+      'Tailwind CSS for utility-first styling',
+      'Tailwind Motion for smooth animations',
+      'Fully responsive layout',
+      'Modern, clean UI/UX',
+      'Mobile-first design'
+    ],
+    packages: ['React', 'Tailwind CSS', 'Tailwind Motion', 'Responsive Design'],
+    images: [
+      '/assets/images/repair_greek_1.png',
+      '/assets/images/repair_greek_2.png',
+      '/assets/images/repair_greek_3.png',
+      '/assets/images/repair_greek_4.png',
+      '/assets/images/repair_greek_5.png',
+      '/assets/images/repair_greek_6.png',
+      '/assets/images/repair_greek_7.png',
+      '/assets/images/repair_greek_8.png',
+      '/assets/images/repair_greek_9.png',
+      '/assets/images/repair_greek_10.png',
+      '/assets/images/repair_greek_11.png',
+    ],
+  },
+  {
+    id: '90seats',
+    title: '90seats',
+    description: '90seats is a robust full-stack web application for seat booking and management. Built using the MERN stack, it features a modern React frontend, fast Node.js/Express backend, and MongoDB for scalable data storage. The UI is crafted with TailwindCSS for a responsive, mobile-friendly experience.',
+    details: `90seats is a comprehensive seat booking and management platform built on the MERN stack. The frontend leverages React and TailwindCSS for a modern, responsive, and highly interactive user experience. The backend, powered by Node.js and Express, ensures fast and secure operations, while MongoDB provides scalable and reliable data storage. Key features include real-time seat availability, booking management, and a mobile-first design that adapts seamlessly to all devices.`,
+    features: [
+      'MERN stack architecture (MongoDB, Express, React, Node.js)',
+      'TailwindCSS for rapid UI development',
+      'Responsive and mobile-first design',
+      'Real-time seat availability and booking',
+      'Admin and user dashboards',
+      'Scalable backend and secure data handling'
+    ],
+    packages: ['React', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB', 'Responsive Design'],
+    images: [
+      '/assets/images/90seats_1.png',
+      '/assets/images/90seats_2.png',
+      '/assets/images/90seats_3.png',
+      '/assets/images/90seats_4.png',
+      '/assets/images/90seats_5.png',
+      '/assets/images/90seats_6.png',
+    ],
+  },
+  {
     id: 'medical-biller',
     title: 'Medical Biller',
     description: 'A comprehensive SaaS platform built with Laravel, designed to streamline medical billing processes for clinics, companies, and professionals. The application features advanced dashboards, multi-role access (Doctor, Company, Job Seeker), dynamic job and company listings, integrated blog, and robust admin controls. Developed using Laravel, Alpine.js, Tailwind CSS, and MySQL, this project delivers a seamless and intuitive experience for every user type.',

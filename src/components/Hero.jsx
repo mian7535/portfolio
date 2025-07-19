@@ -2,17 +2,22 @@ import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaLaravel, FaShopify, FaWordpress, FaDocker, FaCloud } from 'react-icons/fa';
 import { SiMongodb, SiExpress } from 'react-icons/si';
 
+import React, { useState } from 'react';
+
 export default function Hero() {
+  const [profileViewOpen, setProfileViewOpen] = useState(false);
   return (
     <section
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 mx-auto max-w-[90vw] md:max-w-[85vw]"
     >
+            {/* Profile Image with Click-to-View */}
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.3 }}
-        className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white mb-6 mt-12"
+        className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white mb-6 mt-12 cursor-pointer"
+        onClick={() => setProfileViewOpen(true)}
       >
         <img
           src="/assets/images/taimoor.png"
@@ -20,6 +25,31 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
       </motion.div>
+
+      {/* Modal for Profile Image View */}
+      {profileViewOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 transition-all"
+          onClick={() => setProfileViewOpen(false)}
+        >
+          <div className="relative max-w-lg w-full flex items-center justify-center" onClick={e => e.stopPropagation()}>
+            <button
+              className="absolute top-2 right-2 text-white text-3xl font-bold bg-black/50 rounded-full px-3 py-1 hover:bg-black/80 z-10"
+              onClick={() => setProfileViewOpen(false)}
+              aria-label="Close photo view"
+            >
+              &times;
+            </button>
+            <img
+              src="/assets/images/taimoor.png"
+              alt="Profile large view"
+              className="rounded-xl max-h-[80vh] w-auto h-auto shadow-2xl border-4 border-white"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      )}
+
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
