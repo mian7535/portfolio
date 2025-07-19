@@ -40,7 +40,7 @@ const projects = [
     categories: ['Laravel'],
     title: 'Laravel Vue App',
     description: 'As a frontend developer, I have built a Laravel Vue site with responsive design using Alpine.js and Tailwind CSS.',
-    packages: ['Laravel', 'Vue', 'Tailwind CSS', 'Alpine.js', 'Swiper JS'],
+    packages: ['Laravel', 'Vue', 'Tailwind CSS', 'Alpine.js', 'Swiper JS', 'Inertia'],
     images: ['/assets/images/laravel_vue_app.png'],
   },
   {

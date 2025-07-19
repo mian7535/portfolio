@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaLaravel, FaShopify, FaWordpress, FaDocker, FaLinux, FaCloud, FaPhp, FaAngular, FaVuejs } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiAmazonaws, SiMysql } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiMysql } from 'react-icons/si';
 
 const skills = [
   { icon: <FaReact className="text-cyan-400" />, name: 'React' },
