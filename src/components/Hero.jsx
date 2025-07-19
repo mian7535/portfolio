@@ -20,8 +20,8 @@ export default function Hero() {
         onClick={() => setProfileViewOpen(true)}
       >
         <img
-          src="/assets/images/taimoor.png"
-          alt="Mian Taimoor Ahmed profile"
+          src="/assets/images/mian-taimoor-ahmed-profile.png"
+          alt="Mian Taimoor Ahmed profile photo"
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -41,8 +41,8 @@ export default function Hero() {
               &times;
             </button>
             <img
-              src="/assets/images/taimoor.png"
-              alt="Profile large view"
+              src="/assets/images/mian-taimoor-ahmed-profile.png"
+              alt="Mian Taimoor Ahmed profile photo"
               className="rounded-xl max-h-[80vh] w-auto h-auto shadow-2xl border-4 border-white"
               loading="lazy"
             />
