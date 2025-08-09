@@ -1,121 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
-const projects = [
-  {
-    id: 'tour-management',
-    categories: ['Laravel'],
-    title: 'Tour Management System',
-    description: 'As a full stack Laravel developer, I have built a Tour Management System with admin dashboard, agency dashboard, and user dashboard functionality. The system also handles tour bookings and provides a seamless experience for agencies and travelers.',
-    packages: ['Laravel', 'Alpine.js', 'MySQL', 'Tailwind CSS', 'Swiper'],
-    images: ['/assets/images/tour_1.png'],
-  },
-  {
-    id: 'rental-product-plugin',
-    categories: ['WordPress'],
-    title: 'Rental Product Plugin',
-    description: 'As a WordPress developer, I have built a plugin which serves product rental functionality. All rental products can be handled through the dashboard menu.',
-    packages: ['Elementor', 'WordPress', 'Plugin Customization', 'Responsive Design', 'Payment Gateway'],
-    images: ['/assets/images/rental_product_plugin_1.png'],
-  },
-  {
-    id: 'shopify-product-theme',
-    categories: ['Shopify'],
-    title: 'Shopify Product Theme',
-    description: 'As a full stack developer, I have built a Shopify store with dynamic custom theme customization.',
-    packages: ['Shopify', 'Liquid', 'ThemeCustomization', 'JS', 'CSS'],
-    images: ['/assets/images/shopify_product_theme_1.png'],
-  },
-  {
-    id: 'dixon-pim-project',
-    categories: ['WordPress'],
-    title: 'Dixon Pim Project',
-    images: ['/assets/images/dixon_pim_1.png'],
-    description: 'As a backend developer, I handled a massive amount of data related to products and its categories. Implemented Distributors and REST API functionality related to products.',
-    packages: ['PHP', 'WordPress', 'Product Management', 'Syndication System', 'API Integration'],
-  },
-  {
-    id: 'laravel-vue-app',
-    categories: ['Laravel', 'Vue'],
-    title: 'Laravel Vue App',
-    description: 'As a frontend developer, I have built a Laravel Vue site with responsive design using Alpine.js and Tailwind CSS.',
-    packages: ['Laravel', 'Vue', 'Tailwind CSS', 'Alpine.js', 'Swiper JS', 'Inertia'],
-    images: ['/assets/images/laravel_vue_app.png'],
-  },
-  {
-    id: 'woofcrate',
-    title: 'Woofcrate',
-    images: ['/assets/images/woofcrate_1.png'],
-    description: 'Created a fully functioning ecommerce website with Shopify and WordPress collaboration.',
-    categories: ['Shopify', 'WordPress', 'Ecommerce'],
-    packages: ['Shopify', 'WordPress', 'JavaScript', 'PHP', 'Ecommerce', 'Payment Gateway', 'Web Flow', 'Stripe Integration'],
-  },
-  {
-    id: 'repair-greek',
-    title: 'Repair Greek',
-    categories: ['React', 'MERN Stack'],
-    packages: ['React', 'Tailwind CSS', 'Tailwind Motion', 'Responsive Design'],
-    description: 'Repait Greek is a modern web application built with React, Tailwind CSS, and Tailwind Motion. The project features a fully responsive design, smooth motion effects, and a clean, user-friendly interface, making it ideal for both desktop and mobile users.',
-    images: ['/assets/images/repair_greek_1.png'],
-  },
-  {
-    id: '90seats',
-    title: '90seats',
-    categories: ['React', 'MERN Stack'],
-    packages: ['React', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB', 'Responsive Design'],
-    description: '90seats is a robust full-stack web application for seat booking and management. Built using the MERN stack, it features a modern React frontend, fast Node.js/Express backend, and MongoDB for scalable data storage. The UI is crafted with TailwindCSS for a responsive, mobile-friendly experience.',
-    images: [
-      '/assets/images/90seats_1.png',
-      '/assets/images/90seats_2.png',
-      '/assets/images/90seats_3.png',
-      '/assets/images/90seats_4.png',
-      '/assets/images/90seats_5.png',
-      '/assets/images/90seats_6.png',
-    ],
-  },
-  {
-    id: 'medical-biller',
-    title: 'Medical Biller',
-    description: 'A comprehensive Laravel-based SaaS platform for medical billing, featuring multi-role access (Doctor, Company, Job Seeker), advanced dashboards, dynamic job and company listings, integrated blogs, and robust admin controls. Built with modern technologies (Laravel, Alpine.js, Tailwind CSS, MySQL), this project streamlines medical billing operations and empowers users with intuitive interfaces and powerful management tools.',
-    categories: ['Laravel'],
-    packages: ['Laravel', 'PHP', 'Alpine.js', 'Tailwind CSS', 'MySQL'],
-    images: ['/assets/images/medical_biller_1.png'],
-    link: 'https://medicalbiller.co/',
-  },
-  // --- Added by Cascade ---
-  {
-    id: 'balady',
-    title: 'Balady',
-    description: 'Balady is an advanced training platform where users can register, enroll in courses, access lessons, pass exams, and get certified. It provides a seamless e-learning experience with progress tracking and certification.',
-    categories: ['Angular' , 'Laravel'],
-    packages: ['Frontend: Angular', 'Bootstrap', "REST API's", 'Backend: Laravel', 'MySQL'],
-    images: [
-      '/assets/images/balady_1.png',
-      '/assets/images/balady_2.png',
-      '/assets/images/balady_3.png',
-      '/assets/images/balady_4.png',
-      '/assets/images/balady_5.png',
-    ],
-  },
-  {
-    id: 'balady-dashboard',
-    title: 'Balady Dashboard',
-    description: 'Balady Dashboard is the admin panel for the Balady training platform. Admins can manage exams, answer questions, handle users, courses, lessons, and view analytics for platform performance and user progress.',
-    categories: ['Laravel', 'Bootstrap', 'MySQL'],
-    packages: ['Laravel', 'Bootstrap', 'MySQL'],
-    images: [
-      '/assets/images/baladyapp_1.png',
-      '/assets/images/baladyapp_2.png',
-      '/assets/images/baladyapp_3.png',
-      '/assets/images/baladyapp_4.png',
-      '/assets/images/baladyapp_5.png',
-      '/assets/images/baladyapp_6.png',
-    ],
-  }
-];
-
-
+import projects from '../data/projects.json';
+import { FiSearch } from 'react-icons/fi';
 
 const FILTERS = [
   'All',
@@ -129,10 +16,42 @@ const FILTERS = [
 
 export default function Projects() {
   const [selectedFilter, setSelectedFilter] = useState('All');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [visibleProjects, setVisibleProjects] = useState(4);
 
-  const filteredProjects = selectedFilter === 'All'
-    ? projects
-    : projects.filter(p => p.categories && p.categories.includes(selectedFilter));
+  const filteredProjects = useMemo(() => {
+    let result = [...projects];
+    
+    // Apply category filter
+    if (selectedFilter !== 'All') {
+      result = result.filter(p => p.categories && p.categories.includes(selectedFilter));
+    }
+    
+    // Apply search term filter
+    if (searchTerm.trim() !== '') {
+      const term = searchTerm.toLowerCase();
+      result = result.filter(project => {
+        const searchInTitle = project.title?.toLowerCase().includes(term) || false;
+        const searchInDesc = project.description?.toLowerCase().includes(term) || false;
+        const searchInTech = project.packages?.some(pkg => 
+          pkg.toLowerCase().includes(term)
+        ) || false;
+        
+        return searchInTitle || searchInDesc || searchInTech;
+      });
+    }
+    
+    // Reset visible projects when filters change
+    setVisibleProjects(4);
+    
+    return result;
+  }, [selectedFilter, searchTerm]);
+  
+  const loadMoreProjects = () => {
+    setVisibleProjects(prevVisible => prevVisible + 4);
+  };
+  
+  const projectsToShow = filteredProjects.slice(0, visibleProjects);
 
   return (
     <motion.section
@@ -144,9 +63,25 @@ export default function Projects() {
       id="projects"
     >
       <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-10 flex flex-col items-center w-full border border-blue-400/30">
-        <h2 className="text-3xl font-bold mb-8 text-white">Projects</h2>
+        <h2 className="text-3xl font-bold mb-6 text-white">Projects</h2>
+        
+        {/* Search Bar */}
+        <div className="relative w-full max-w-2xl mb-8">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <FiSearch className="h-5 w-5 text-blue-300" />
+          </div>
+          <input
+            type="text"
+            className="block w-full pl-10 pr-3 py-3 border border-blue-400/30 rounded-full bg-white/5 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="Search projects by title, description, or technologies..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+        
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent my-2"></div>
         {/* Filter Bar */}
-        <div className="flex flex-wrap gap-3 mb-10 w-full justify-center">
+        <div className="flex flex-wrap gap-3 mt-6 mb-10 w-full justify-center">
           {FILTERS.map((filter) => (
             <button
               key={filter}
@@ -163,10 +98,10 @@ export default function Projects() {
 
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          {filteredProjects.length === 0 && (
+          {projectsToShow.length === 0 ? (
             <div className="col-span-full text-center text-gray-300 py-12 text-lg">No projects found for this category.</div>
-          )}
-          {filteredProjects.map((project, idx) => (
+          ) : (
+            projectsToShow.map((project, idx) => (
             <motion.div
               key={idx}
               whileHover={{ scale: 1.04 }}
@@ -194,7 +129,18 @@ export default function Projects() {
               </div>
               <Link to={`/project/${project.id}`} className="bg-blue-500 hover:bg-cyan-400 hover:text-blue-900 text-white font-semibold py-2 px-6 rounded-full shadow transition mt-auto text-center">View Project</Link>
             </motion.div>
-          ))}
+          )))}
+          
+          {filteredProjects.length > visibleProjects && (
+            <div className="col-span-full flex justify-center mt-6">
+              <button
+                onClick={loadMoreProjects}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105"
+              >
+                Load More Projects
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

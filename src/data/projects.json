@@ -1,0 +1,237 @@
+[
+  {
+    "id": "tour-management",
+    "categories": ["Laravel"],
+    "title": "Tour Management System",
+    "description": "As a full stack Laravel developer, I have built a Tour Management System with admin dashboard, agency dashboard, and user dashboard functionality. The system also handles tour bookings and provides a seamless experience for agencies and travelers.",
+    "details": "The Tour Management System is a comprehensive web application designed for travel agencies, admins, and end users. As the full stack developer, I implemented:\n- Admin Dashboard: Manage agencies, users, tours, and bookings with analytics and notifications.\n- Agency Dashboard: Agencies can create and manage tours, view bookings, and interact with customers.\n- User Dashboard: Users can browse tours, make bookings, and track their reservations.\n- Booking Engine: Secure and robust tour booking with real-time availability.\n- Responsive UI: Modern interface with Tailwind CSS and Alpine.js for smooth interactivity.\n\nBuilt with Laravel (backend), Alpine.js (interactivity), Tailwind CSS (UI), MySQL (database), and Swiper (gallery), the system is fast, secure, and user-friendly.",
+    "features": [
+      "Admin, agency, and user dashboards",
+      "Tour creation and management",
+      "Secure tour booking system",
+      "Analytics and notifications",
+      "Modern UI with Tailwind CSS and Alpine.js",
+      "Image gallery with Swiper.js"
+    ],
+    "packages": ["Laravel", "Alpine.js", "MySQL", "Tailwind CSS", "Swiper"],
+    "images": [
+      "/assets/images/tour_1.png",
+      "/assets/images/tour_2.png",
+      "/assets/images/tour_3.png",
+      "/assets/images/tour_4.png",
+      "/assets/images/tour_5.png",
+      "/assets/images/tour_6.png"
+    ],
+    "link": "#"
+  },
+  {
+    "id": "rental-product-plugin",
+    "categories": ["WordPress"],
+    "title": "Rental Product Plugin",
+    "description": "As a WordPress developer, I have built a plugin which serves product rental functionality. All rental products can be handled through the dashboard menu.",
+    "details": "Rental Product Plugin is a custom WordPress plugin developed to provide seamless product rental functionality for e-commerce sites. As the developer, I implemented:\n- Dashboard integration for easy rental product management\n- Elementor compatibility for flexible design\n- Payment gateway integration for smooth transactions\n- Responsive design for all devices\n\nThe plugin allows site owners to add, edit, and manage rental products directly from the WordPress dashboard, making it easy to offer rental services online.",
+    "features": [
+      "Dashboard menu for rental product management",
+      "Elementor builder compatibility",
+      "Custom plugin development",
+      "Responsive design",
+      "Payment gateway integration"
+    ],
+    "images": [
+      "/assets/images/rental_product_plugin_1.png"
+    ],
+    "packages": ["Elementor", "WordPress", "Plugin Customization", "Responsive Design", "Payment Gateway"]
+  },
+  {
+    "id": "shopify-product-theme",
+    "categories": ["Shopify"],
+    "title": "Shopify Product Theme",
+    "description": "As a full stack developer, I have built a Shopify store with dynamic custom theme customization.",
+    "details": "Shopify Product Theme is a custom Shopify store solution featuring dynamic theme customization. As the full stack developer, I implemented:\n- Custom Liquid templates for flexible product and collection layouts\n- Advanced theme customization options from the Shopify admin\n- Integration of JavaScript and CSS for enhanced interactivity and design\n- Fully responsive and mobile-friendly design\n\nThis project enables store owners to easily update the look and feel of their store without code, while providing a seamless shopping experience for customers.",
+    "features": [
+      "Dynamic custom theme customization",
+      "Custom Liquid templates",
+      "JS and CSS enhancements",
+      "Responsive and mobile-friendly design",
+      "Easy admin configuration"
+    ],
+    "images": [
+      "/assets/images/shopify_product_theme_1.png"
+    ],
+    "packages": ["Shopify", "Liquid", "ThemeCustomization", "JS", "CSS"]
+  },
+  {
+    "id": "dixon-pim-project",
+    "categories": ["WordPress"],
+    "title": "Dixon Pim Project",
+    "description": "As a backend developer, I handled a massive amount of data related to products and its categories. Implemented Distributors and REST API functionality related to products.",
+    "details": "Dixon Pim Project is a large-scale backend system for managing high-volume product and category data. As the backend developer, I implemented:\n- Efficient data models for products and categories\n- Distributor management and syndication system\n- REST API endpoints for product data integration\n- Automated product import/export workflows\n\nThe solution is built on WordPress and PHP, enabling seamless product management and third-party integrations for distributors and partners.",
+    "features": [
+      "Massive product and category data handling",
+      "Distributor and syndication management",
+      "REST API for product integration",
+      "Automated import/export workflows",
+      "Robust backend architecture"
+    ],
+    "images": ["/assets/images/dixon_pim_1.png"],
+    "packages": ["PHP", "WordPress", "Product Management", "Syndication System", "API Integration"]
+  },
+  {
+    "id": "laravel-vue-app",
+    "categories": ["Laravel", "Vue"],
+    "title": "Laravel Vue App",
+    "description": "As a frontend developer, I have built a Laravel Vue site with responsive design using Alpine.js and Tailwind CSS.",
+    "details": "Laravel Vue App is a modern web application built with Laravel as the backend and Vue.js as the frontend. As the frontend developer, I implemented:\n- Responsive design with Tailwind CSS\n- Dynamic UI with Vue.js and Alpine.js\n- Swiper.js for interactive sliders\n- Seamless integration between Laravel and Vue components\n\nThe project delivers a fast, interactive, and mobile-friendly user experience.",
+    "features": [
+      "Vue.js frontend with Laravel backend",
+      "Responsive design with Tailwind CSS",
+      "Alpine.js for interactivity",
+      "Swiper.js for sliders",
+      "Seamless Laravel-Vue integration"
+    ],
+    "packages": ["Laravel", "Vue", "Tailwind CSS", "Alpine.js", "Swiper JS"],
+    "images": [
+      "/assets/images/laravel_vue_app.png"
+    ]
+  },
+  {
+    "id": "woofcrate",
+    "title": "Woofcrate",
+    "description": "Created a fully functioning ecommerce website with Shopify and WordPress collaboration.",
+    "details": "Woofcrate is a fully functioning ecommerce website built through the collaboration of Shopify and WordPress. The project features:\n- Seamless integration between Shopify and WordPress for product and content management\n- Custom web flows for user experience optimization\n- Payment gateway setup with Stripe integration\n- Responsive design and dynamic product listings\n\nThis solution allows for flexible store management and a smooth customer journey across platforms.",
+    "features": [
+      "Shopify and WordPress integration",
+      "Custom web flows",
+      "Stripe payment gateway",
+      "Responsive ecommerce design",
+      "Dynamic product management"
+    ],
+    "images": [
+      "/assets/images/woofcrate_1.png"
+    ],
+    "categories": ["Shopify", "WordPress", "Ecommerce"],
+    "packages": ["Shopify", "WordPress", "JavaScript", "PHP", "Ecommerce", "Payment Gateway", "Web Flow", "Stripe Integration"]
+  },
+  {
+    "id": "repair-greek",
+    "title": "Repair Greek",
+    "description": "Repait Greek is a modern web application built with React, Tailwind CSS, and Tailwind Motion. The project features a fully responsive design, smooth motion effects, and a clean, user-friendly interface, making it ideal for both desktop and mobile users.",
+    "details": "Repait Greek is a showcase of modern frontend engineering. Built with React for robust component architecture, styled with Tailwind CSS for rapid and consistent UI, and animated using Tailwind Motion for delightful transitions and interactivity. The design is fully responsive, ensuring a seamless experience on both desktop and mobile devices. This project demonstrates best practices in UI/UX, accessibility, and performance, making it a model for contemporary web apps.",
+    "features": [
+      "Built with React",
+      "Tailwind CSS for utility-first styling",
+      "Tailwind Motion for smooth animations",
+      "Fully responsive layout",
+      "Modern, clean UI/UX",
+      "Mobile-first design"
+    ],
+    "packages": ["React", "Tailwind CSS", "Tailwind Motion", "Responsive Design"],
+    "images": [
+      "/assets/images/repair_greek_1.png",
+      "/assets/images/repair_greek_2.png",
+      "/assets/images/repair_greek_3.png",
+      "/assets/images/repair_greek_4.png",
+      "/assets/images/repair_greek_5.png",
+      "/assets/images/repair_greek_6.png",
+      "/assets/images/repair_greek_7.png",
+      "/assets/images/repair_greek_8.png",
+      "/assets/images/repair_greek_9.png",
+      "/assets/images/repair_greek_10.png",
+      "/assets/images/repair_greek_11.png"
+    ],
+    "categories": ["React", "MERN Stack"]
+  },
+  {
+    "id": "90seats",
+    "title": "90seats",
+    "description": "90seats is a robust full-stack web application for seat booking and management. Built using the MERN stack, it features a modern React frontend, fast Node.js/Express backend, and MongoDB for scalable data storage. The UI is crafted with TailwindCSS for a responsive, mobile-friendly experience.",
+    "details": "90seats is a comprehensive seat booking and management platform built on the MERN stack. The frontend leverages React and TailwindCSS for a modern, responsive, and highly interactive user experience. The backend, powered by Node.js and Express, ensures fast and secure operations, while MongoDB provides scalable and reliable data storage. Key features include real-time seat availability, booking management, and a mobile-first design that adapts seamlessly to all devices.",
+    "features": [
+      "MERN stack architecture (MongoDB, Express, React, Node.js)",
+      "TailwindCSS for rapid UI development",
+      "Responsive and mobile-first design",
+      "Real-time seat availability and booking",
+      "Admin and user dashboards",
+      "Scalable backend and secure data handling"
+    ],
+    "packages": ["React", "TailwindCSS", "Node.js", "Express", "MongoDB", "Responsive Design"],
+    "images": [
+      "/assets/images/90seats_1.png",
+      "/assets/images/90seats_2.png",
+      "/assets/images/90seats_3.png",
+      "/assets/images/90seats_4.png",
+      "/assets/images/90seats_5.png",
+      "/assets/images/90seats_6.png"
+    ],
+    "categories": ["React", "MERN Stack"]
+  },
+  {
+    "id": "medical-biller",
+    "title": "Medical Biller",
+    "description": "A comprehensive Laravel-based SaaS platform for medical billing, featuring multi-role access (Doctor, Company, Job Seeker), advanced dashboards, dynamic job and company listings, integrated blogs, and robust admin controls. Built with modern technologies (Laravel, Alpine.js, Tailwind CSS, MySQL), this project streamlines medical billing operations and empowers users with intuitive interfaces and powerful management tools.",
+    "details": "Medical Biller is a comprehensive SaaS solution for medical billing management. The platform features multi-role access for doctors, companies, and job seekers, each with tailored dashboards and functionalities. Built with Laravel, Alpine.js, and Tailwind CSS, it offers a modern, responsive interface with powerful features for managing medical billing operations, job postings, and company profiles. The system includes robust admin controls, analytics, and reporting capabilities to streamline medical billing workflows and improve operational efficiency.",
+    "features": [
+      "Multi-role access (Doctor, Company, Job Seeker)",
+      "Advanced dashboards and analytics",
+      "Dynamic job and company listings",
+      "Integrated blog system",
+      "Robust admin controls",
+      "Responsive design with Tailwind CSS"
+    ],
+    "packages": ["Laravel", "PHP", "Alpine.js", "Tailwind CSS", "MySQL"],
+    "images": [
+      "/assets/images/medical_biller_1.png",
+      "/assets/images/medical_biller_2.png",
+      "/assets/images/medical_biller_3.png"
+    ],
+    "link": "https://medicalbiller.co/",
+    "categories": ["Laravel"]
+  },
+  {
+    "id": "balady",
+    "title": "Balady",
+    "description": "Balady is an advanced training platform where users can register, enroll in courses, access lessons, pass exams, and get certified. It provides a seamless e-learning experience with progress tracking and certification.",
+    "details": "Balady is a comprehensive e-learning platform that offers a complete learning management solution. The platform features user registration, course enrollment, lesson management, exam functionality, and certification. Built with Angular for the frontend and Laravel for the backend, it provides a responsive and interactive learning experience. The system includes progress tracking, course management, and certification features to support both learners and instructors in a seamless online learning environment.",
+    "features": [
+      "User registration and authentication",
+      "Course enrollment and management",
+      "Interactive lessons and content",
+      "Exam and assessment system",
+      "Progress tracking",
+      "Certificate generation"
+    ],
+    "categories": ["Angular", "Laravel"],
+    "packages": ["Frontend: Angular", "Bootstrap", "REST API's", "Backend: Laravel", "MySQL"],
+    "images": [
+      "/assets/images/balady_1.png",
+      "/assets/images/balady_2.png",
+      "/assets/images/balady_3.png",
+      "/assets/images/balady_4.png",
+      "/assets/images/balady_5.png"
+    ]
+  },
+  {
+    "id": "balady-dashboard",
+    "title": "Balady Dashboard",
+    "description": "Balady Dashboard is the admin panel for the Balady training platform. Admins can manage exams, answer questions, handle users, courses, lessons, and view analytics for platform performance and user progress.",
+    "details": "Balady Dashboard serves as the administrative control center for the Balady e-learning platform. This powerful dashboard enables administrators to manage all aspects of the learning platform, including user management, course administration, exam creation and grading, content management, and analytics. Built with Laravel and Bootstrap, it provides a responsive and intuitive interface for managing the entire e-learning ecosystem. The dashboard includes comprehensive reporting features to track user progress, course completion rates, and overall platform performance.",
+    "features": [
+      "Comprehensive user management",
+      "Course and lesson administration",
+      "Exam and question bank management",
+      "Analytics and reporting",
+      "Content management system",
+      "Responsive admin interface"
+    ],
+    "categories": ["Laravel", "Bootstrap", "MySQL"],
+    "packages": ["Laravel", "Bootstrap", "MySQL"],
+    "images": [
+      "/assets/images/baladyapp_1.png",
+      "/assets/images/baladyapp_2.png",
+      "/assets/images/baladyapp_3.png",
+      "/assets/images/baladyapp_4.png",
+      "/assets/images/baladyapp_5.png",
+      "/assets/images/baladyapp_6.png"
+    ]
+  }
+]
