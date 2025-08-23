@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaLaravel, FaShopify, FaWordpress, FaDocker, FaLinux, FaCloud, FaPhp, FaAngular, FaVuejs } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiMysql } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiMysql, SiJenkins, SiKubernetes } from 'react-icons/si';
 
 const skills = [
   { icon: <FaReact className="text-cyan-400" />, name: 'React' },
@@ -17,6 +17,8 @@ const skills = [
   { icon: <FaLinux className="text-yellow-400" />, name: 'Linux' },
   { icon: <SiMysql className="text-blue-600" />, name: 'MySQL' },
   { icon: <FaPhp className="text-indigo-400" />, name: 'PHP' },
+  { icon: <SiJenkins className="text-red-500" />, name: 'Jenkins CI/CD' },
+  { icon: <SiKubernetes className="text-blue-500" />, name: 'Kubernetes' },
 ];
 
 

@@ -1,5 +1,101 @@
 [
   {
+    "id": "course-reel",
+    "categories": ["MERN Stack", "FFmpeg", "Video Processing"],
+    "title": "Course Reel",
+    "description": "A powerful MERN stack video editing platform that lets users create, edit, and download custom videos with text, images, and audio.",
+    "details": "Course Reel is a comprehensive video editing platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to create professional-looking videos with ease. Key features include:\n\n- User authentication (login/register)\n- Video creation and editing interface\n- Text overlay with customizable fonts, colors, and sizes\n- Background image customization\n- Multi-slide creation with multiple images\n- Audio integration for background music or voiceovers\n- Video processing using FFmpeg for high-quality output\n- Download edited videos in various formats\n- Responsive design for all devices\n\nThe platform uses React for the frontend, Node.js with Express for the backend, MongoDB for data storage, and FFmpeg for video processing. The intuitive interface makes video editing accessible to users of all skill levels.",
+    "features": [
+      "User authentication and profiles",
+      "Drag-and-drop video editor",
+      "Customizable text overlays",
+      "Multiple image slides support",
+      "Background audio integration",
+      "FFmpeg video processing",
+      "Video preview and download"
+    ],
+    "packages": ["React", "Node.js", "Express", "MongoDB", "FFmpeg", "JWT", "Tailwind CSS"],
+    "images": [
+      "/assets/images/coursereel1.png",
+      "/assets/images/coursereel2.png",
+      "/assets/images/coursereel3.png",
+      "/assets/images/coursereel4.png",
+      "/assets/images/coursereel5.png",
+      "/assets/images/coursereel6.png"
+    ]
+  },
+  {
+    "id": "my-way",
+    "categories": ["Laravel", "Vue.js", "WebSockets", "Live Location"],
+    "title": "My Way",
+    "description": "An industrial-grade transportation management system with real-time tracking, facility management, and ride booking capabilities.",
+    "details": "My Way is a comprehensive transportation management system designed for industrial facilities, featuring real-time tracking and management of vehicles, drivers, and passengers. The system includes:\n\n- Multi-role authentication (Facility, Driver, Passenger, Admin)\n- Facility management portal for adding/managing drivers and vehicles\n- Driver mobile application with real-time location tracking\n- Passenger ride booking and tracking system\n- Student/guardian tracking for school transportation\n- Real-time status updates via WebSockets\n- Route management and optimization\n- Vehicle capacity tracking\n- Document verification system for drivers\n- Ride history and reporting\n\nBuilt with Laravel for the backend API, Vue.js for the admin dashboard, and WebSockets for real-time updates, this system provides a complete solution for managing industrial transportation needs with live tracking and status updates.",
+    "features": [
+      "Facility and driver management",
+      "Real-time vehicle tracking",
+      "Passenger ride booking",
+      "Student/guardian tracking",
+      "Document verification",
+      "Route optimization",
+      "Live location updates",
+      "Vehicle capacity management",
+      "Ride status notifications"
+    ],
+    "packages": ["Laravel", "Vue.js", "WebSockets", "MySQL", "Redis", "Pusher", "JWT"],
+    "images": [
+      "/assets/images/myway-1.jpg",
+      "/assets/images/myway-2.png",
+      "/assets/images/myway-3.jpg",
+      "/assets/images/myway-4.jpg",
+      "/assets/images/myway-5.jpg",
+      "/assets/images/myway-6.png"
+    ]
+  },
+  {
+    "id": "maze-ir-portal",
+    "categories": ["WordPress", "Custom CSS", "Investor Relations"],
+    "title": "Maze Therapeutics IR Portal",
+    "description": "A professional Investor Relations portal for Maze Therapeutics, built with WordPress, custom CSS, and specialized plugins to serve shareholders and financial analysts.",
+    "details": "Developed the Investor Relations (IR) portal for Maze Therapeutics, a clinical-stage biopharmaceutical company. The site serves as a comprehensive resource for investors, analysts, and shareholders with the following features:\n\n- Press releases and financial reports (Q2 2025 results, etc.)\n- SEC filings management (10-Q, 8-K, 13G/A)\n- Investor events calendar (conferences, earnings calls)\n- Corporate presentations and overviews\n- Analyst coverage information\n- Investor FAQ section\n- Custom plugins for financial data display\n- Responsive design for all devices\n\nBuilt with WordPress for easy content management, custom CSS for brand alignment, and specialized plugins for financial data presentation and security.",
+    "features": [
+      "Custom WordPress theme development",
+      "Financial data presentation tools",
+      "SEC filings management system",
+      "Investor events calendar",
+      "Responsive design",
+      "Secure document repository"
+    ],
+    "packages": ["WordPress", "Custom CSS", "PHP", "JavaScript", "jQuery"],
+    "images": [
+      "/assets/images/maze1.png",
+      "/assets/images/maze2.png",
+      "/assets/images/maze3.png",
+      "/assets/images/maze4.png",
+      "/assets/images/maze5.png",
+      "/assets/images/maze6.png",
+      "/assets/images/maze7.png",
+      "/assets/images/maze8.png"
+    ]
+  },
+  {
+    "id": "facebook-scraper",
+    "categories": ["PHP", "Web Scraping", "MySQL"],
+    "title": "Facebook Post Scraper",
+    "description": "A PHP-based web scraper that extracts posts, content, titles, and account information from Facebook pages and stores them in a database for display.",
+    "details": "The Facebook Post Scraper is a powerful tool that automates the process of collecting and displaying Facebook posts. The system includes:\n- Web scraping functionality to extract post data from Facebook pages\n- Database storage for efficient data management\n- Clean, responsive frontend to display scraped posts\n- Error handling and logging for reliable operation\n\nBuilt with core PHP and MySQL, this tool demonstrates skills in web scraping, database management, and backend development. The system can be easily extended to include additional features like scheduling and data analysis.",
+    "features": [
+      "Scrapes Facebook posts including content and metadata",
+      "Stores data in MySQL database",
+      "Responsive frontend display",
+      "Handles missing images gracefully",
+      "Efficient data retrieval and storage"
+    ],
+    "packages": ["PHP", "MySQL", "Web Scraping", "Bootstrap"],
+    "images": [
+      "/assets/images/facebook-scraper-simple.svg"
+    ]
+  },
+  {
     "id": "tour-management",
     "categories": ["Laravel"],
     "title": "Tour Management System",
@@ -21,8 +117,7 @@
       "/assets/images/tour_4.png",
       "/assets/images/tour_5.png",
       "/assets/images/tour_6.png"
-    ],
-    "link": "#"
+    ]
   },
   {
     "id": "rental-product-plugin",

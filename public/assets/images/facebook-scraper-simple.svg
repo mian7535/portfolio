@@ -1,0 +1,36 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F5F5"/>
+  
+  <!-- Card -->
+  <rect x="100" y="100" width="600" height="400" rx="8" fill="white" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="120" y="120" width="120" height="120" rx="60" fill="#E9ECEF"/>
+  <text x="180" y="190" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1877F2">FB</text>
+  
+  <!-- Title -->
+  <text x="260" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212529">Facebook Scraper</text>
+  <text x="260" y="210" font-family="Arial, sans-serif" font-size="16" fill="#6C757D">Data Extraction Tool</text>
+  
+  <!-- Divider -->
+  <line x1="120" y1="260" x2="680" y2="260" stroke="#E9ECEF" stroke-width="2"/>
+  
+  <!-- Content -->
+  <rect x="160" y="300" width="80" height="80" rx="4" fill="#E9ECEF"/>
+  <rect x="260" y="300" width="80" height="80" rx="4" fill="#E9ECEF"/>
+  <rect x="360" y="300" width="80" height="80" rx="4" fill="#E9ECEF"/>
+  <rect x="460" y="300" width="80" height="80" rx="4" fill="#E9ECEF"/>
+  
+  <!-- Icons -->
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#1877F2">📊</text>
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#1877F2">🔍</text>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#1877F2">💾</text>
+  <text x="500" y="350" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#1877F2">📱</text>
+  
+  <!-- Labels -->
+  <text x="200" y="400" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">Data</text>
+  <text x="300" y="400" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">Scrape</text>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">Store</text>
+  <text x="500" y="400" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">Display</text>
+</svg>
