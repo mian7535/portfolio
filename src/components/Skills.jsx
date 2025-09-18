@@ -24,7 +24,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-12 bg-gray-900 flex flex-col items-center px-4 mx-auto max-w-[90vw] md:max-w-[85vw]">
+    <section id="skills" className="py-16 bg-gray-800 dark:bg-gray-800 bg-gray-200 text-gray-900 dark:text-white flex flex-col justify-center items-center mx-auto max-w-[90vw] md:max-w-[85vw]">
       <h2 className="text-3xl font-bold mb-8 text-white">Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 w-full">
         {skills.map((skill, idx) => (

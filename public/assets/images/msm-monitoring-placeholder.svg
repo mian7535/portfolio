@@ -1,0 +1,105 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="machineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a7bd5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)" rx="8"/>
+  
+  <!-- Industrial Machine -->
+  <g>
+    <rect x="50" y="120" width="80" height="60" fill="url(#machineGradient)" rx="8"/>
+    <rect x="60" y="130" width="15" height="15" fill="#00d2ff" rx="2"/>
+    <rect x="85" y="130" width="15" height="15" fill="#e94560" rx="2"/>
+    <rect x="110" y="130" width="15" height="15" fill="#00ff88" rx="2"/>
+    <text x="90" y="200" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Machine A</text>
+  </g>
+  
+  <!-- Second Machine -->
+  <g>
+    <rect x="50" y="200" width="80" height="60" fill="url(#machineGradient)" rx="8"/>
+    <rect x="60" y="210" width="15" height="15" fill="#00d2ff" rx="2"/>
+    <rect x="85" y="210" width="15" height="15" fill="#e94560" rx="2"/>
+    <rect x="110" y="210" width="15" height="15" fill="#00ff88" rx="2"/>
+    <text x="90" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Machine B</text>
+  </g>
+  
+  <!-- Data Flow Lines -->
+  <g stroke="#00d2ff" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M 130 150 Q 180 140 220 150"/>
+    <path d="M 130 230 Q 180 220 220 230"/>
+    
+    <!-- Animated data points -->
+    <circle cx="150" cy="150" r="3" fill="#00d2ff">
+      <animate attributeName="cx" values="150;200;250" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="230" r="3" fill="#00d2ff">
+      <animate attributeName="cx" values="150;200;250" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Monitoring Dashboard -->
+  <g>
+    <rect x="250" y="100" width="120" height="120" fill="#1a1a2e" stroke="#00d2ff" stroke-width="2" rx="8"/>
+    
+    <!-- Dashboard Screen -->
+    <rect x="260" y="110" width="100" height="80" fill="#0f3460" rx="4"/>
+    
+    <!-- Chart Lines -->
+    <polyline points="270,140 280,135 290,145 300,130 310,140 320,125 330,135 340,120 350,130" 
+              stroke="#00d2ff" stroke-width="2" fill="none"/>
+    <polyline points="270,160 280,155 290,165 300,150 310,160 320,145 330,155 340,140 350,150" 
+              stroke="#e94560" stroke-width="2" fill="none"/>
+    <polyline points="270,180 280,175 290,185 300,170 310,180 320,165 330,175 340,160 350,170" 
+              stroke="#00ff88" stroke-width="2" fill="none"/>
+    
+    <!-- Status indicators -->
+    <circle cx="270" cy="200" r="4" fill="#00ff88"/>
+    <circle cx="290" cy="200" r="4" fill="#00d2ff"/>
+    <circle cx="310" cy="200" r="4" fill="#e94560"/>
+    
+    <text x="320" y="240" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Monitoring Dashboard</text>
+  </g>
+  
+  <!-- MQTT/IoT Indicators -->
+  <g>
+    <circle cx="180" cy="80" r="15" fill="#00d2ff" opacity="0.3"/>
+    <text x="180" y="85" text-anchor="middle" fill="#00d2ff" font-family="Arial, sans-serif" font-size="8" font-weight="bold">MQTT</text>
+    
+    <!-- Signal waves -->
+    <circle cx="180" cy="80" r="20" fill="none" stroke="#00d2ff" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" values="20;30;40" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">MSM - Machine State Monitoring</text>
+  <text x="200" y="50" text-anchor="middle" fill="#00d2ff" font-family="Arial, sans-serif" font-size="12">Real-time Industrial IoT Monitoring</text>
+  
+  <!-- Technology badges -->
+  <g>
+    <rect x="30" y="270" width="50" height="18" fill="#00d2ff" rx="9"/>
+    <text x="55" y="282" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">Node.js</text>
+    
+    <rect x="90" y="270" width="50" height="18" fill="#00d2ff" rx="9"/>
+    <text x="115" y="282" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">MongoDB</text>
+    
+    <rect x="150" y="270" width="50" height="18" fill="#00d2ff" rx="9"/>
+    <text x="175" y="282" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">MQTT</text>
+    
+    <rect x="210" y="270" width="50" height="18" fill="#00d2ff" rx="9"/>
+    <text x="235" y="282" text-anchor="middle" fill="#1a1a2e" font-family="Arial, sans-serif" font-size="9" font-weight="bold">IoT</text>
+  </g>
+</svg>

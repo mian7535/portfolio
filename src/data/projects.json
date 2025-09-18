@@ -1,5 +1,49 @@
 [
   {
+    "id": "fleet-provisioning",
+    "title": "AWS IoT Fleet Provisioning",
+    "description": "A Node.js implementation for AWS IoT Fleet Provisioning that enables automatic provisioning of IoT devices with unique certificates and registration without pre-generating certificates.",
+    "details": "AWS IoT Fleet Provisioning is a comprehensive Node.js solution that automates the process of provisioning IoT devices at scale. The system uses claim certificates with limited permissions to securely provision new devices with unique certificates and register them as IoT Things in AWS IoT Core. Key features include:\n\n- Automated device provisioning using AWS IoT Fleet Provisioning\n- Claim certificate management with minimal permissions\n- Batch provisioning support for multiple devices\n- Secure MQTT communication over port 8883\n- Template-based provisioning configuration\n- Real-time provisioning status tracking\n- Error handling and retry mechanisms\n- Certificate and policy management\n\nBuilt with Node.js and AWS IoT Device SDK, this solution is perfect for mass device deployment scenarios where manual certificate generation is not feasible.",
+    "features": [
+      "Automated IoT device provisioning",
+      "Claim certificate management",
+      "Batch device provisioning support",
+      "Secure MQTT communication",
+      "Template-based configuration",
+      "Real-time status tracking",
+      "Error handling and logging",
+      "AWS IoT Core integration"
+    ],
+    "categories": ["MERN Stack"],
+    "packages": ["Node.js", "AWS IoT Device SDK", "AWS SDK", "dotenv", "MQTT"],
+    "images": [
+      "/assets/images/fleet-provisioning-placeholder.svg"
+    ]
+  },
+  {
+    "id": "msm-monitoring",
+    "title": "MSM - Machine State Monitoring",
+    "description": "A comprehensive IoT monitoring system with Node.js backend, MQTT communication, and MongoDB for real-time machine state monitoring, device management, and telemetry data processing.",
+    "details": "MSM (Machine State Monitoring) is an advanced IoT monitoring platform designed for industrial machine monitoring and management. The system provides real-time telemetry data collection, device configuration management, and comprehensive monitoring capabilities. Built with Node.js, Express, MongoDB, and AWS IoT Core, it offers:\n\n- Real-time telemetry data collection and processing\n- Device command and control via MQTT\n- Multi-phase power monitoring (voltage, current, power, energy)\n- Remote device configuration (NTP, MQTT, SFTP)\n- RESTful API for device management\n- MongoDB for scalable data storage\n- AWS IoT Core integration for secure communication\n- Device status monitoring and alerts\n- Batch device management capabilities\n\nThe platform supports industrial-grade monitoring with features like power quality analysis, energy consumption tracking, and remote device management through secure MQTT communication.",
+    "features": [
+      "Real-time telemetry data collection",
+      "Multi-phase power monitoring",
+      "Remote device configuration",
+      "MQTT command and control",
+      "RESTful API endpoints",
+      "MongoDB data storage",
+      "AWS IoT Core integration",
+      "Device status monitoring",
+      "Energy consumption tracking",
+      "Industrial-grade monitoring"
+    ],
+    "categories": ["MERN Stack"],
+    "packages": ["Node.js", "Express", "MongoDB", "Mongoose", "AWS IoT Device SDK", "MQTT", "JWT", "bcryptjs", "CORS"],
+    "images": [
+      "/assets/images/msm-monitoring-placeholder.svg"
+    ]
+  },
+  {
     "id": "course-reel",
     "categories": ["MERN Stack", "FFmpeg", "Video Processing"],
     "title": "Course Reel",
@@ -327,6 +371,59 @@
       "/assets/images/baladyapp_4.png",
       "/assets/images/baladyapp_5.png",
       "/assets/images/baladyapp_6.png"
+    ]
+  },
+  {
+    "id": "mern-balady",
+    "title": "MERN Balady",
+    "description": "Balady is an advanced training platform converted from Laravel to Node.js backend. Users can register, enroll in courses, access lessons, pass exams, and get certified. It provides a seamless e-learning experience with progress tracking and certification.",
+    "details": "MERN Balady is a comprehensive e-learning platform that has been successfully migrated from Laravel to Node.js backend for improved performance and scalability. The platform features user registration, course enrollment, lesson management, exam functionality, and certification. Built with Angular for the frontend and Node.js with Express for the backend, it provides a responsive and interactive learning experience. The system includes progress tracking, course management, and certification features to support both learners and instructors in a seamless online learning environment.",
+    "features": [
+      "User registration and authentication",
+      "Course enrollment and management", 
+      "Interactive lessons and content",
+      "Exam and assessment system",
+      "Progress tracking",
+      "Certificate generation",
+      "Migrated from Laravel to Node.js backend"
+    ],
+    "categories": ["MERN Stack"],
+    "packages": ["Frontend: Angular", "Bootstrap", "REST API's", "Backend: Node.js", "Express", "MySQL"],
+    "images": [
+      "/assets/images/balady_1.png",
+      "/assets/images/balady_2.png", 
+      "/assets/images/balady_3.png",
+      "/assets/images/balady_4.png",
+      "/assets/images/balady_5.png"
+    ]
+  },
+  {
+    "id": "intracheck",
+    "title": "IntraCheck - HABOOB Flight Management System",
+    "description": "A comprehensive UAV/drone flight management system with bilingual pre-flight and post-flight checklists, flight logbooks, PDF generation, and admin dashboard for aviation operations.",
+    "details": "IntraCheck is a professional-grade flight management system designed specifically for UAV (Unmanned Aerial Vehicle) operations under the HABOOB project. The system provides comprehensive flight operation management with the following capabilities:\n\n- Bilingual pre-flight checklists (English/Arabic) with detailed inspection items\n- Post-flight checklists for maintenance and operational verification\n- Digital flight logbooks with takeoff/landing data tracking\n- PDF generation using Puppeteer for official documentation\n- Multi-role user authentication (Admin, Pilot, Maintenance)\n- Admin dashboard with user management and analytics\n- Real-time flight data collection and storage\n- Maintenance record tracking and compliance\n- Session-based authentication with MongoDB storage\n- Responsive EJS templates with modern UI\n\nBuilt with Node.js and Express for the backend, MongoDB for data persistence, and EJS for server-side rendering. The system ensures aviation compliance through structured checklists and automated PDF report generation for regulatory requirements.",
+    "features": [
+      "Bilingual pre-flight checklists (English/Arabic)",
+      "Post-flight inspection checklists",
+      "Digital flight logbook management",
+      "PDF report generation with Puppeteer",
+      "Multi-role user authentication",
+      "Admin dashboard and analytics",
+      "Real-time flight data tracking",
+      "Maintenance record management",
+      "Session-based security",
+      "Responsive web interface"
+    ],
+    "categories": ["MERN Stack"],
+    "packages": ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Puppeteer", "bcryptjs", "express-session", "connect-mongo"],
+    "images": [
+      "/assets/images/intracheck1.png",
+      "/assets/images/intracheck2.png",
+      "/assets/images/intracheck3.png",
+      "/assets/images/intracheck4.png",
+      "/assets/images/intracheck5.png",
+      "/assets/images/intracheck6.png",
+      "/assets/images/intracheck7.png"
     ]
   }
 ]

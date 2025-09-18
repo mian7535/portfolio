@@ -19,7 +19,7 @@ export default function DownloadResume() {
         <h2 className="text-3xl font-bold mb-2 text-white">Download My Resume</h2>
         <p className="text-gray-100 mb-6 text-center">Get a copy of my latest resume, highlighting my experience in MERN, Laravel, Shopify, WordPress, Cloud, and DevOps.</p>
         <a
-          href="/assets/pdf/Mian's Resume.pdf"
+          href="/assets/pdf/MianResume.pdf"
           download
           className="flex items-center gap-3 bg-blue-600 hover:bg-cyan-400 hover:text-blue-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition mb-2 text-lg group"
         >

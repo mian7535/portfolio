@@ -55,7 +55,7 @@ export default function Projects() {
 
   return (
     <motion.section
-      className="py-16 bg-gray-900 flex flex-col items-center max-w-[90vw] md:max-w-[85vw] mx-auto relative"
+      className="py-16 bg-gray-900 dark:bg-gray-900 bg-gray-100 text-gray-900 dark:text-white flex flex-col items-center max-w-[90vw] md:max-w-[85vw] mx-auto relative"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

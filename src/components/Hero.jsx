@@ -5,11 +5,27 @@ import { SiMongodb, SiExpress } from 'react-icons/si';
 import React, { useState } from 'react';
 
 export default function Hero() {
+
+
+  const result = fetch('http://51.20.89.127:5000/api/auth/login' , {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+  email: "superadmin@msm.com",
+  password: "SuperAdmin123!"
+    })
+  })
+
+  console.log(result)
+
+
   const [profileViewOpen, setProfileViewOpen] = useState(false);
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 mx-auto max-w-[90vw] md:max-w-[85vw]"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-white text-gray-900 px-4 mx-auto max-w-[90vw] md:max-w-[85vw] pt-20"
     >
             {/* Profile Image with Click-to-View */}
       <motion.div
